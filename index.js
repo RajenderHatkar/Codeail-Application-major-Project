@@ -2,7 +2,7 @@ const express=require('express');
 const app=express();
 // by defalut app will run on 80
 const port=8001;
-
+const db=require('./config/mongoose');
 //layouts
 const expressLayouts=require('express-ejs-layouts');
 //static file like css js and images
