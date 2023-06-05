@@ -5,5 +5,9 @@ console.log('hey router is working');
 
 router.get('/profile',userController.profile);
 router.use('/profile',require('./post'));
+router.get('/sign-up',userController.signup);
+router.get('/sign-in',userController.signin); //sign-in we can name it here
+
+router.post('/create',userController.create);
 
 module.exports=router;

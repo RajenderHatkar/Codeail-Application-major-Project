@@ -1,11 +1,18 @@
 const express=require('express');
+//require cookies after installation
+const cookiesParser = require('cookie-parser');
 const app=express();
 // by defalut app will run on 80
 const port=8001;
 const db=require('./config/mongoose');
 //layouts
 const expressLayouts=require('express-ejs-layouts');
+const cookieParser = require('cookie-parser');
 //static file like css js and images
+
+app.use(express.urlencoded());
+app.use(cookieParser());
+
 app.use(express.static('./assets'));
 app.use(expressLayouts);
 // extract style and scripts from sub pages into layouts
