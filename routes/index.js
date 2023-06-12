@@ -10,4 +10,5 @@ router.use('/users',require('./users'));
 //router.use('/routername',require('./routerfile'));
 router.use('/users',require('./post'));
 
+router.use('/posts',require('./posts'));
 module.exports=router;
