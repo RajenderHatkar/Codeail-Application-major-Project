@@ -1,8 +1,8 @@
 body{
     
-    text-align: center;
+    background-color: antiquewhite;
 }
 ul li{
-    list-style-type: none;
+   
     align-items: center;
 }
